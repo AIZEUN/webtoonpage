@@ -1,0 +1,32 @@
+<%= form_with(model: webtoon, local: true) do |form| %>
+  <% if webtoon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(webtoon.errors.count, "error") %> prohibited this webtoon from being saved:</h2>
+
+      <ul>
+      <% webtoon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :writer %>
+    <%= form.text_field :writer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :webtoon_name %>
+    <%= form.text_field :webtoon_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gerne %>
+    <%= form.text_field :gerne %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

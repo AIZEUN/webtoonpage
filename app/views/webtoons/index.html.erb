@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>웹툰</h1>
+
+<table class="table table-boarded">
+  <thead>
+    <tr>
+      <th>작가명</th>
+      <th>웹툰</th>
+      <th>장르</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @webtoons.each do |webtoon| %>
+      <tr>
+        <td><%= webtoon.writer %></td>
+        <td><%= webtoon.webtoon_name %></td>
+        <td><%= webtoon.gerne %></td>
+        <td><%= button_to "웹툰구독", boards_path(board: { user_id: current_user.id, webtoon_id: webtoon.id}) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<ul>
+	<p>
+		<%= link_to '이벤트 확인', events_path %>
+	</p>
+</ul>
+
+

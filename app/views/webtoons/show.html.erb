@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Writer:</strong>
+  <%= @webtoon.writer %>
+</p>
+
+<p>
+  <strong>Webtoon name:</strong>
+  <%= @webtoon.webtoon_name %>
+</p>
+
+<p>
+  <strong>Gerne:</strong>
+  <%= @webtoon.gerne %>
+</p>
+
+<%= link_to 'Edit', edit_webtoon_path(@webtoon) %> |
+<%= link_to 'Back', webtoons_path %>

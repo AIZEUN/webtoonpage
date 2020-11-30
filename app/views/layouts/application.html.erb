@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GoormRailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+	  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+	  <nav id="container">
+		
+			<% if user_signed_in? %>
+				<%= link_to "보관함",boards_path %> |
+				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %> |
+				아이디 : <%= current_user.email %> |
+				
+			<% else %>
+				<%= link_to "로그인", user_session_path %>
+				<%= link_to "회원가입", "/user/sign_up" %>
+			<% end %>
+		
+	
+	  </nav>
+	  <hr/>
+	  <div id="container">
+		  <%= yield %>
+	  </div>
+  </body>
+</html>

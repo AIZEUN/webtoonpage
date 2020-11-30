@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h2>
+  <%= @event.event_name %> 이벤트
+</h2>
+<hr/>
+<p>
+  <%= @event.structure %>에게 <%= @event.event_name %>을 제공합니다.
+</p>
+
+<%= link_to '돌아가기', events_path %>

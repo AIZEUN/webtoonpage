@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>보관함</h1>
+
+<table class="table table-boarded">
+  <thead>
+    <tr>
+      <th>구독한 웹툰</th>
+      <th>id</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boards.each do |board| %>
+      <tr>
+        <td><%= board.webtoon.webtoon_name %></td>
+        <td><%= board.user.email %></td>
+        <td><%= link_to '상세정보', board %></td>
+        <td><%= link_to '구독취소', board, method: :delete, data: { confirm: '구독을 취소하시겠습니까?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<ul>
+	<p>
+		<%= link_to '웹툰사이트', webtoons_path %>
+	</p>
+	<p>
+		<%= link_to '이벤트 확인', events_path %>
+	</p>
+	
+</ul>

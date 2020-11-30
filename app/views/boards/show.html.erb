@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>유저:</strong>
+  <%= @board.user.email %>
+</p>
+
+<p>
+  <strong>웹툰:</strong>
+  <%= @board.webtoon.webtoon_name %>
+</p>
+
+<p>
+  <strong>구독일자:</strong>
+  <%= @board.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_board_path(@board) %> |
+<%= link_to 'Back', boards_path %>
