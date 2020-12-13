@@ -8383,3 +8383,947 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 107ms (Views: 90.3ms | ActiveRecord: 7.5ms)
 
 
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:45:03 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.4.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.4.4) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.4.4) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.4.4) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:45:42 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by WebtoonsController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2020-12-13 06:45:42 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (77.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 127.5ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2020-12-13 06:45:53 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a3A4ahj9KoOsWFSNmExouTNcP8yrS9i7q22WaaDEcRpZR8CyMoCo5aZFeKdXAIUtTJltHfclQDHB9AAmpP5bfg==", "user"=>{"email"=>"ksc787833@naver.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "ksc787833@naver.com"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Redirected to http://webtoonplatform-fpgka.run.goorm.io/
+Completed 302 Found in 1104ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:45:54 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (2.7ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendered webtoons/index.html.erb within layouts/application (45.8ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 5.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Webtoon::ActiveRecord_Relation:0x0000555841ab9cc8>
+Did you mean?  to_xml):
+     6: 		장르선택
+     7: 	</li>
+     8: 	<p>
+     9: 		<%= link_to '전체', Webtoon.all %> | <%= link_to '개그, 일상', Webtoon.where(gerne: '개그, 일상') %> | <%= link_to '판타지', Webtoon.where(gerne: '판타지') %> | <%= link_to '학원물', Webtoon.where(gerne: '학원물') %>	
+    10: 	</p>
+    11: </ul>
+    12: 
+  
+app/views/webtoons/index.html.erb:9:in `_app_views_webtoons_index_html_erb__897388204554088953_46918773600180'
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:47:24 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:21
+  Rendered webtoons/index.html.erb within layouts/application (78.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 82.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 06:47:26 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:47:30 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:21
+  Rendered webtoons/index.html.erb within layouts/application (3.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 78.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 06:47:32 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (41.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 41.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:47:39 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:21
+  Rendered webtoons/index.html.erb within layouts/application (3.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 06:47:41 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 06:50:15 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (65.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 68.9ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:50:24 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:21
+  Rendered webtoons/index.html.erb within layouts/application (14.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 125ms (Views: 91.7ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 06:50:33 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (23.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 23.2ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 06:52:52 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (64.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:21
+  Rendered webtoons/index.html.erb within layouts/application (2.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 8.4ms | ActiveRecord: 65.2ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 06:52:54 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:30:29 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.6ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (10.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 13.9ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:30:31 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:30:55 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 74.8ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:31:51 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (82.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 86.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:31:53 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:32:25 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (9.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 13.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:32:26 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (27.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 630ms (ActiveRecord: 27.8ms)
+
+
+  
+NameError (undefined local variable or method `user_email' for #<BoardsController:0x00007f6ac037cdc8>
+Did you mean?  user_session_url):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:33:03 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (83.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 180ms (Views: 87.9ms | ActiveRecord: 76.5ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:33:05 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (68.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 991ms (ActiveRecord: 68.2ms)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<BoardsController:0x00007f6ac4506e60>
+Did you mean?  user_session):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:33:26 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (13.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 87.1ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:33:28 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:36:00 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (9.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 13.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:36:02 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Class:0x00007f6ac43ab0e8>):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:37:14 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (83.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 89.2ms | ActiveRecord: 74.9ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:37:15 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 429ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (undefined local variable or method `board' for #<BoardsController:0x00007f6ac426b110>
+Did you mean?  board_url):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:37:39 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (83.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 13.6ms | ActiveRecord: 81.7ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:37:41 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass
+Did you mean?  super):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:38:23 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (82.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 179ms (Views: 88.9ms | ActiveRecord: 74.5ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:38:24 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (44.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 44.9ms)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass
+Did you mean?  super):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:43:39 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (9.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 102.8ms | ActiveRecord: 74.3ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:43:41 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: board):
+  
+app/controllers/boards_controller.rb:79:in `board_params'
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:44:37 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (87.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (2.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 13.7ms | ActiveRecord: 87.7ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:44:39 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: board):
+  
+app/controllers/boards_controller.rb:79:in `board_params'
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:44:45 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (88.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 182ms (Views: 92.7ms | ActiveRecord: 77.7ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:44:47 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `user_id' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:46:43 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (82.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 183ms (Views: 88.0ms | ActiveRecord: 80.7ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:46:45 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: board):
+  
+app/controllers/boards_controller.rb:79:in `board_params'
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:48:16 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (12.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 85.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:48:17 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: board):
+  
+app/controllers/boards_controller.rb:78:in `board_params'
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:48:27 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (80.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 84.3ms | ActiveRecord: 83.0ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:48:29 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (54.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 400 Bad Request in 63ms (ActiveRecord: 54.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: board):
+  
+app/controllers/boards_controller.rb:78:in `board_params'
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:48:55 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (11.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 87.5ms | ActiveRecord: 80.4ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:48:58 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (22.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:15
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  [1m[36mWebtoon Load (0.3ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  Rendered boards/index.html.erb within layouts/application (54.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 33.6ms | ActiveRecord: 28.1ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:49:06 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:15
+  [1m[36mWebtoon Load (40.8ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  [1m[36mWebtoon Load (0.3ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  [1m[36mWebtoon Load (0.3ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  Rendered boards/index.html.erb within layouts/application (48.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 25.1ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/boards/1" for 172.17.0.1 at 2020-12-13 07:49:11 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (22.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:72
+  Rendering boards/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/show.html.erb:5
+  [1m[36mWebtoon Load (0.3ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/show.html.erb:10
+  Rendered boards/show.html.erb within layouts/application (4.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 13.6ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:49:13 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:15
+  [1m[36mWebtoon Load (0.2ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  [1m[36mWebtoon Load (0.3ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  [1m[36mWebtoon Load (0.3ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:17
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/index.html.erb:18
+  Rendered boards/index.html.erb within layouts/application (7.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 13.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/boards/1" for 172.17.0.1 at 2020-12-13 07:49:18 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (64.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:72
+  Rendering boards/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/show.html.erb:5
+  [1m[36mWebtoon Load (0.2ms)[0m  [1m[34mSELECT  "webtoons".* FROM "webtoons" WHERE "webtoons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/show.html.erb:10
+  Rendered boards/show.html.erb within layouts/application (3.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 9.0ms | ActiveRecord: 65.3ms)
+
+
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:50:22 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (87.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 91.5ms | ActiveRecord: 80.4ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:50:23 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/workspace/webtoonplatform/app/controllers/boards_controller.rb:8: syntax error, unexpected ')'
+...@boards = Board.where(user_id:)
+...                              ^
+/workspace/webtoonplatform/app/controllers/boards_controller.rb:79: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/boards_controller.rb:8: syntax error, unexpected ')'
+app/controllers/boards_controller.rb:79: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:50:42 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (82.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 86.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:50:44 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/workspace/webtoonplatform/app/controllers/boards_controller.rb:8: syntax error, unexpected ')'
+...boards = Board.where(user_id: )
+...                              ^
+/workspace/webtoonplatform/app/controllers/boards_controller.rb:79: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/boards_controller.rb:8: syntax error, unexpected ')'
+app/controllers/boards_controller.rb:79: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:51:04 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (12.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 84.3ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:51:06 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `user' for #<Class:0x00007f6ad450d520>
+Did you mean?  super):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:51:17 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (69.5ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (87.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 202ms (Views: 27.8ms | ActiveRecord: 75.8ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:51:19 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `user' for #<Class:0x000055583f1cce50>
+Did you mean?  super):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:51:31 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (71.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (10.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 13.9ms | ActiveRecord: 77.6ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:51:34 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Class:0x00007f6ac43bce38>):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:52:31 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (81.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 86.7ms | ActiveRecord: 79.7ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:52:32 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
+Started GET "/" for 172.17.0.1 at 2020-12-13 07:52:41 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WebtoonsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering webtoons/index.html.erb within layouts/application
+  [1m[36mWebtoon Load (0.4ms)[0m  [1m[34mSELECT "webtoons".* FROM "webtoons"[0m
+  ↳ app/views/webtoons/index.html.erb:16
+  Rendered webtoons/index.html.erb within layouts/application (12.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 18.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/boards" for 172.17.0.1 at 2020-12-13 07:52:43 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BoardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass):
+  
+app/controllers/boards_controller.rb:8:in `index'
